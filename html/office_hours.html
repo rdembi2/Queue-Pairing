@@ -23,6 +23,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
+
 </head>
 
 <body>
@@ -82,64 +83,206 @@
                     <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
                 </li>
             </ul> -->
-        </nav>
+          </nav>
 
-        <!-- Page Content  -->
-        <div id="content">
+          <!-- Page Content  -->
+          <div id="content">
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
+              <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <div class="container-fluid">
 
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
-                        <span>Go</span>
-                    </button>
-                    <!-- <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
+                      <button type="button" id="sidebarCollapse" class="btn btn-info">
+                          <i class="fas fa-align-left"></i>
+                          <span>Go</span>
+                      </button>
+                      <!-- <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <i class="fas fa-align-justify"></i>
+                      </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
-                        </ul>
-                    </div> -->
-                </div>
-            </nav>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="nav navbar-nav ml-auto">
+                              <li class="nav-item active">
+                                  <a class="nav-link" href="#">Page</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#">Page</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#">Page</a>
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="#">Page</a>
+                              </li>
+                          </ul>
+                      </div> -->
+
+                      <div class="inputs" id="input_data">
+                          <br>
+                          <div>Main: Rashi Dembi <br> Question Understood: Q2 <br> Question Help: Q1</div>
+                          <br>
+                          <div>Main: Ana Park <br> Question Understood: Q3 <br> Question Help: Q4</div>
+                          <br>
+                          <div>Main: Julia Harvey <br> Question Understood:  <br> Question Help: Q5</div>
+                          <br>
+                          <div>Main: Mary Else <br> Question Understood: Q4 <br> Question Help: Q2</div>
+                          <br>
+                          <div>Main: Vander Bilt <br> Question Understood: Q1 <br> Question Help: Q3</div>
+                          <br>
+                          <div>Main: JJ <br> Question Understood: Q5 <br> Question Help: Q1</div>
+                          <br>
+                          <div>Main: EP <br> Question Understood: Q6 <br> Question Help: Q7</div>
+                      </div>
+
+                      <br>
+                      <!-- <button type="submit" id="btn-search" name="btn-search" class="btn btn-primary">Submit</button> -->
+                      <button id="myBtn" type="submit" value="Rashi Dembi - Mary Else <br> Ana Park - Vander Bilt <br> JJ - EP" onclick="myFunction()" class="btn btn-primary">Create Pairs</button>
+                      <br><br>
+
+                      <p id="demo"></p>
+
+                      <script>
+                      function myFunction() {
+                        var x = document.getElementById("myBtn").value;
+                        document.getElementById("demo").innerHTML = x;
+                      }
+                      </script>
+
+
+
+
+                      <form id="form">
+                       <div class="form-row">
+                         <div class="form-group col-md-6">
+                           <label for="name">Name</label>
+                           <input type="text" class="form-control" id="name" placeholder="name">
+                         </div>
+                       </div>
+
+
+                         <label for="problems_solved">Problems Solved: </label>
+                         <div class="form-check">
+                         <input class="form-check-input" type="radio" name="Solve-Q1" id="Solve-radio1" value="option1" checked>
+                         <label class="form-check-label" for="Solve-radio1">
+                           Question 1
+                         </label>
+                         </div>
+
+                         <div class="form-check">
+                         <input class="form-check-input" type="radio" name="Solve-Q2" id="Solve-radio2" value="option2">
+                         <label class="form-check-label" for="Solve-radio2">
+                           Question 2
+                         </label>
+                         </div>
+
+                         <div class="form-check">
+                         <input class="form-check-input" type="radio" name="Solve-Q3" id="Solve-radio3" value="option3">
+                         <label class="form-check-label" for="Solve-radio3">
+                           Question 3
+                         </label>
+                         </div>
+
+                         <div class="form-check">
+                         <input class="form-check-input" type="radio" name="Solve-Q4" id="Solve-radio4" value="option4">
+                         <label class="form-check-label" for="Solve-radio4">
+                           Question 4
+                         </label>
+                         </div>
+
+                         <div class="form-check">
+                         <input class="form-check-input" type="radio" name="Solve-Q5" id="Solve-radio5" value="option5">
+                         <label class="form-check-label" for="Solve-radio5">
+                           Question 5
+                         </label>
+                         </div>
+
+                         <div class="form-check">
+                         <input class="form-check-input" type="radio" name="Solve-Q6" id="Solve-radio6" value="option6">
+                         <label class="form-check-label" for="Solve-radio6">
+                           Question 6
+                         </label>
+                         </div>
+
+                         <div class="form-check">
+                         <input class="form-check-input" type="radio" name="Solve-Q7" id="Solve-radio7" value="option7">
+                         <label class="form-check-label" for="Solve-radio7">
+                           Question 7
+                         </label>
+                         </div>
+
+
+
+
+                         <label for="problems_solved">Problems you need help with:</label>
+                         <div class="form-check">
+                         <input class="form-check-input" type="radio" name="Help-Q1" id="Help-radio1" value="option1" checked>
+                         <label class="form-check-label" for="Help-radio1">
+                           Question 1
+                         </label>
+                         </div>
+
+                         <div class="form-check">
+                         <input class="form-check-input" type="radio" name="Help-Q2" id="Help-radio2" value="option2">
+                         <label class="form-check-label" for="Help-radio2">
+                           Question 2
+                         </label>
+                         </div>
+
+                         <div class="form-check">
+                         <input class="form-check-input" type="radio" name="Help-Q3" id="Help-radio3" value="option3">
+                         <label class="form-check-label" for="Help-radio3">
+                           Question 3
+                         </label>
+                         </div>
+
+                         <div class="form-check">
+                         <input class="form-check-input" type="radio" name="Help-Q4" id="Help-radio4" value="option4">
+                         <label class="form-check-label" for="Help-radio4">
+                           Question 4
+                         </label>
+                         </div>
+
+                         <div class="form-check">
+                         <input class="form-check-input" type="radio" name="Help-Q5" id="Help-radio5" value="option5">
+                         <label class="form-check-label" for="Help-radio5">
+                           Question 5
+                         </label>
+                         </div>
+
+                         <div class="form-check">
+                         <input class="form-check-input" type="radio" name="Help-Q6" id="Help-radio6" value="option6">
+                         <label class="form-check-label" for="Help-radio6">
+                           Question 6
+                         </label>
+                         </div>
+
+                         <div class="form-check">
+                         <input class="form-check-input" type="radio" name="Help-Q7" id="Help-radio7" value="option7">
+                         <label class="form-check-label" for="Help-radio7">
+                           Question 7
+                         </label>
+                         </div>
+
+
+                         <!-- <div class="form-group center-block">
+                         <div class="col-sm-2">
+                           <button type="submit" id="btn-search" name="btn-search" class="btn btn-primary btn-lg btn-tu>Submit</button>
+                         </div>
+                         </div> -->
+                       <button type="submit" id="btn-search" name="btn-search" class="btn btn-primary">Submit</button>
+                      </form>
+
+                  </div>
+              </nav>
+
+            <p id="demo"></p>
 
             <h2>Office Hours</h2>
-            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-            <div class="line"></div>
-
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <div class="line"></div>
-
-            <h2>Lorem Ipsum Dolor</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-            <div class="line"></div>
-
-            <h3>Lorem Ipsum Dolor</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
-
-        </div>
+          </div>
     </div>
 
     <div class="overlay"></div>
+
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
